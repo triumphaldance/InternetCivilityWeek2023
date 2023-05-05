@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=375,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+    <!--登录页面-->
+    <!--开始页面-->
+    <div class="page startGame active">
+        <button class="startBtn">开始答题</button>
+        <ul class="text">
+            <li>1. 题目数量为10道，每道题10分</li>
+            <li>2. 可以多次测试，每次题目均不同，第二次分数会覆盖第一次的分数</li>
+            <li>3. 分数绑定学号，以便于后期发放奖品，所以请一定正确填写您的学号</li>
+        </ul>
+    </div>
+    
+    <!--答题页面-->
+    <div class="page gaming">
+        <!--题目-->
+        <h1 class="timu"></h1>
+        <!--选项-->
+        <div class="options"></div>
+    </div>
+    
+    <!--结束页面-->
+    <div class="page endGame">
+        <h1>恭喜您获取：<span class="score">100</span>分</h1>
+        <button class="reStart">重新答题</button>
+
+            <p style="color: #ffffff" class="poetry" id="poetry-content"></p>
+    </div>
+    
+
+    
+
+    
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>

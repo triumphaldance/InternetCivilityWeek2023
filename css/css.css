@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*设置不会因为内边距和 边框撑开宽度和高度*/
+	box-sizing: border-box;
+}
+.text {
+	position: absolute;
+	bottom: 40px; /* 距离底部的距离 */
+	left: 30px; /* 距离左侧的距离 */
+	right: 30px;
+	color:#999999;
+	list-style: none;
+
+  }
+.text li {
+	margin-bottom: 10px; /* 设置每个列表项之间的下边距 */
+}
+.poetry{
+	position: absolute;
+	bottom: 20%;
+}
+
+html,body{
+	/*溢出隐藏*/
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: #333333;
+}
+.page{
+	width: 375px;
+	height: 100%;
+	/*三个页面都重叠到一起*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #333333;
+	transform: translateX(375px);
+	transition: all 1s;
+}
+
+.active{
+	/*!important让这个权限变高覆盖上面的，进行偏移*/
+	transform: translateX(0px) !important;
+}
+
+.startGame{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.startBtn{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	border: none;
+	background: #336699;
+	color: #fff;
+	/*阴影不进行偏移 */
+	box-shadow: 0 0 30px #336699;
+	border-radius: 10px;
+}
+
+.gaming{
+	background: #333333;
+	padding: 40px 20px;
+}
+.gaming h1{
+	margin: 20px 0px;
+	font-size: 24px;
+	color: #fff;
+}
+.gaming .options>div{
+	margin: 10px 10px;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 7px;
+}
+/*正确显示的颜色*/
+.correct{
+	background: #009966;
+}
+/*错误显示的颜色*/
+.error{
+	background: #CC0033;
+}
+
+
+/*结束页面*/
+.endGame{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.endGame h1{
+	margin: 40px;
+	color: #999999;
+}
+.reStart{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	border: none;
+	background: #336699;
+	color: #fff;
+	/*阴影不进行偏移 */
+	box-shadow: 0 0 30px #336699;
+	border-radius: 10px;
+}
