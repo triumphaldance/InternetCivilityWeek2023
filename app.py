@@ -6,11 +6,12 @@ import pymysql
 pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
+#要更改
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:123456@localhost/db_name'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+# 创建数据库模型（Model）来表示要存储的数据
 class UserPoint(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50))
@@ -24,6 +25,7 @@ class UserPoint(db.Model):
 
 @app.route('/userpoint', methods=['POST'])
 def save_user_point():
+    # 解析请求体中的表单数据
     username = request.form.get('username')
     student_id = request.form.get('studentID')
     score = request.form.get('score')
