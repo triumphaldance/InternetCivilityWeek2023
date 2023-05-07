@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request 
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
