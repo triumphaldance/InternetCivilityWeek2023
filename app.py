@@ -1,11 +1,18 @@
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
+
 
 pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
+
+CORS(app)
+# CORS(app, origins=['http://example.com', 'https://example.com'])
+
+
 #要更改
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:123456@localhost/db_name'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -29,7 +36,8 @@ def save_user_point():
     username = request.form.get('username')
     student_id = request.form.get('studentID')
     score = request.form.get('score')
-
+    duration = request.form.get('durationInSeconds')
+    print(request.form)
     record = UserPoint.query.filter_by(student_id=student_id).first()
     user_point = UserPoint(username, student_id, score)
     if not record:

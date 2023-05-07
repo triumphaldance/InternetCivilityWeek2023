@@ -4,7 +4,7 @@ var score = 0;
 //是否还能继续选择
 var isChoose = false;
 //设置答题数量
-var num = 10;
+var num = 1;
 
 // 诗句选择
 function getRandomPoem() {
@@ -59,6 +59,11 @@ $(".startBtn").click(function(e){
 	$(".startGame").removeClass("active")
 	//每次点击随机出个题目并显示在页面上
 	randomRender()
+	// 获取开始时间戳
+    var startTime = Date.now();
+    // 存储开始时间戳，以备后续使用
+    sessionStorage.setItem('startTime', startTime);
+
 })
 
 function randomRender(){
@@ -112,6 +117,56 @@ $(".options").click(function(e){
 				$(".endGame").addClass("active")
 				//获取得分标签,把上面累计的得分设置显示到页面上
 				$(".score").html(score);
+				// 获取开始时间戳和结束时间戳
+				var startTime = parseInt(sessionStorage.getItem('startTime'));
+				var endTime = Date.now();
+				// 将开始、结束时间格式化为年月日时分秒的形式
+				var startDateTime = new Date(startTime).toLocaleString();
+				var endDateTime = new Date(endTime).toLocaleString();
+				// 计算答题时间（毫秒）
+				var duration = endTime - startTime;
+				// 将答题时间转换为秒
+				var durationInSeconds = Math.floor(duration / 1000);
+				console.log('答题时间（秒）:', durationInSeconds);
+				// 将答题时间转换为时分秒的形式
+				var durationFormatted = formatDuration(duration);
+				console.log('答题时间（时:分:秒）:', durationFormatted);
+				// 渲染开始、结束时间和答题时间到页面上的相应元素
+				$("#endDateTime").text(endDateTime);
+				$("#duration").text(durationFormatted);
+				$("#startDateTime").text(startDateTime);
+				//答题结束开始向后端发起post请求
+				// 构造要发送的数据对象
+				var data = {
+					username: usernameParam,
+					studentID: studentIDParam,
+					score: score,
+					duration: durationInSeconds
+				};
+			
+				// 发送POST请求给后端Flask
+				$.ajax({
+					// url: "/userpoint", // 替换为你的Flask后端的URL端点
+					url: 'http://127.0.0.1:5000/userpoint',
+					method: "POST",
+					data: JSON.stringify(data),
+					dataType: "json",
+ 					contentType: "application/json",
+					success: function(response) {
+						// 请求成功的回调函数
+						console.log("数据发送成功");
+						console.log("后端返回的响应:", response);
+						// 在此处可以进行其他处理，例如显示成功信息给用户
+					},
+					error: function(error) {
+						// 请求失败的回调函数
+						console.log("数据发送失败");
+						console.log("错误信息:", error);
+						// 在此处可以进行错误处理，例如显示错误信息给用户
+					}
+				});
+			
+				// 重新刷新页面进行重新答题
 			}else{
 				isChoose = false;
 				randomRender()
@@ -129,32 +184,23 @@ $(".options").click(function(e){
 
 //点击重新答题按钮后,重新刷新页面进行重新答题， ajax向后端传usernameParam，studentIDParam和score三个值
 $(".reStart").click(function(){
-    // 构造要发送的数据对象
-    var data = {
-        username: usernameParam,
-        studentID: studentIDParam,
-        score: score
-    };
-
-    // 发送POST请求给后端Flask
-    $.ajax({
-        url: "/userpoint", // 替换为你的Flask后端的URL端点
-        method: "POST",
-        data: data,
-        success: function(response) {
-            // 请求成功的回调函数
-            console.log("数据发送成功");
-            console.log("后端返回的响应:", response);
-            // 在此处可以进行其他处理，例如显示成功信息给用户
-        },
-        error: function(error) {
-            // 请求失败的回调函数
-            console.log("数据发送失败");
-            console.log("错误信息:", error);
-            // 在此处可以进行错误处理，例如显示错误信息给用户
-        }
-    });
-
-    // 重新刷新页面进行重新答题
+	//重新重新开始获取开始时间戳
+	var startTime = parseInt(sessionStorage.getItem('startTime'));
+    
     location.reload();
 });
+function formatDuration(duration) {
+    var seconds = Math.floor(duration / 1000);
+    var hours = Math.floor(seconds / 3600);
+    var minutes = Math.floor((seconds % 3600) / 60);
+    seconds = seconds % 60;
+    return hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+};
+
+
+
+
+
+
+
+
