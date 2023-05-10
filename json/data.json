@@ -3,9 +3,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"公共图书资源",
 		"国家数据资源",
@@ -19,9 +16,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"维护",
 		"运维",
@@ -35,9 +29,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"电信科研机构",
 		"电信企业",
@@ -51,9 +42,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"更改",
 		"删除",
@@ -67,9 +55,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"1",
 		"10",
@@ -83,9 +68,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"直接；适当",
 		"完全；最小",
@@ -99,9 +81,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"一倍以上十倍以下，一百万元以下",
 		"一倍以上五倍以下，五十万元以下",
@@ -115,9 +94,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "宣传部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"中国电信",
 		"信息部",
@@ -131,9 +107,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"跨站脚本攻击",
 		"分布式拒绝服务攻击",
@@ -147,25 +120,19 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XSS 攻击",
 		"SQL 注入",
 		"CSRF 攻击",
 		"DOS 攻击"
 	],
-	"qu" : "乌贼的新书《宿命之环》在3.4日上架时导致起点系统崩溃，请问这次事件的起因（）与网络攻击哪种类似？",
+	"qu" : "乌贼的新书《宿命之环》在3月4日上架时导致起点系统崩溃，请问这次事件的起因（）与网络攻击哪种类似？",
 	"type" : "网络威胁问题"
 },{
 	"__v" : 0,
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"网络钓鱼",
 		"重放攻击",
@@ -179,9 +146,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"对系统进行备份",
 		"窃取用户信息",
@@ -195,9 +159,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"缓存溢出攻击",
 		"钓鱼攻击",
@@ -211,9 +172,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"木马",
 		"暴力攻击",
@@ -227,9 +185,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"防止数据丢失",
 		"提供安全措施指导",
@@ -243,9 +198,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"主动攻击和被动攻击",
 		"危险和安全",
@@ -259,9 +211,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"设备系统安全",
 		"数据内容安全",
@@ -275,9 +224,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "UI设计部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"https://www.12321.cn",
 		"http://cyberpolice.mps.gov.cn/",
@@ -291,9 +237,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"互联网上的热门话题",
 		"企业或者组织在互联网上的形象",
@@ -307,9 +250,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"使用弱密码",
 		"下载未知来源的文件",
@@ -323,9 +263,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"①②③",
 		"①②④",
@@ -339,9 +276,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"及时性",
 		"真实性",
@@ -355,9 +289,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"和平回复，求同存异",
 		"和他对线",
@@ -371,9 +302,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"举报这条新闻",
 		"转发这条新闻，带节奏",
@@ -387,9 +315,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"防范垃圾邮件和网络钓鱼",
 		"保护国家安全和社会稳定",
@@ -403,9 +328,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"网络言论自由可以无限制地行使，不应该有任何限制",
 		"政府可以基于维护国家稳定的需要，适当限制部分网民的言论自由",
@@ -419,9 +341,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" :2 ,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"不使用公共无线网络",
 		"不透露个人信息",
@@ -435,9 +354,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"《中华人民共和国宪法》",
 		"《中华人民共和国国家安全法》",
@@ -451,9 +367,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"《网络安全法》",
 		"《反恐怖主义法》",
@@ -467,9 +380,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"互联网技术的发展",
 		"社会治安状况的变化",
@@ -483,9 +393,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "开发部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"DNS污染",
 		"IP封锁",
@@ -499,9 +406,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"依赖网络",
 		"缺乏交流",
@@ -515,9 +419,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"正确",
 		"错误"
@@ -529,9 +430,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"主动出击",
 		"举报、拉黑，杜绝网络暴力",
@@ -545,9 +443,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"网络成瘾者的上网行为在个人生活中占据统治地位",
 		"网络成瘾者对上网有一种难以控制的强烈渴望",
@@ -561,9 +456,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"清空手机和电脑上所有应用程序和网站的浏览记录",
 		"限制每天使用互联网的时间并设定提醒",
@@ -577,9 +469,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"在线发布鼓励正面互动和合作的帖子",
 		"在网络上接受和分享他人的建议和帮助",
@@ -593,9 +482,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"兴奋性、耐受性",
 		"依赖性、冲动性",
@@ -609,9 +495,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "媒体运营部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"动机",
 		"兴趣",
@@ -625,9 +508,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"RSA",
 		"SHA-1",
@@ -641,9 +521,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"DoS攻击",
 		"DDoS攻击",
@@ -657,9 +534,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"465",
 		"25",
@@ -673,9 +547,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"用户选择自己的昵称并作为加密的ScreenName cookie存在浏览器中，由于其RememberMe Cookie加密算法相同，使攻击者提交该加密令牌获取管理员身份",
 		"用户正常访问网页，服务器响应时并不包含恶意脚本，但用户浏览器响应时恶意脚本执行",
@@ -689,9 +560,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"数据篡改及破坏",
 		"数据窃听",
@@ -705,9 +573,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"正确",
 		"错误"
@@ -719,9 +584,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"主机传感器",
 		"网络传感器",
@@ -735,9 +597,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XSS漏洞",
 		"CSRF漏洞",
@@ -751,9 +610,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XSS漏洞",
 		"CSRF漏洞",
@@ -767,9 +623,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"RSA",
 		"SHA-1",
@@ -783,11 +636,8 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 1,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
-		"XSS漏洞",
+		"DDoS攻击",
 		"CSRF漏洞",
 		"SQL注入漏洞",
 		"缓冲区溢出漏洞"
@@ -799,9 +649,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"不轻易点击未经核实链接",
 		"在社交网站谨慎发布个人信息",
@@ -815,9 +662,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 5,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"防火墙技术",
 		"数据加密技术",
@@ -832,9 +676,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"注入漏洞",
 		"文件上传漏洞",
@@ -848,9 +689,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"杀毒软件",
 		"浏览器应用",
@@ -864,9 +702,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"安装杀毒软件",
 		"启用防火墙",
@@ -880,25 +715,19 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XSS漏洞",
 		"CSRF漏洞",
 		"SQL注入漏洞",
 		"缓冲区溢出漏洞"
 	],
-	"qu" : "下列哪种网络安全漏洞是由于程序没有正确过滤用户输入造成的？",
+	"qu" : "下列哪种网络安全漏洞不是由于程序没有正确过滤用户输入造成的？",
 	"type" : "网络安全基础知识"
 },{
 	"__v" : 0,
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 4,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"采用sql语句预编译和绑定变量",
 		"使用正则表达式过滤传入的参数",
@@ -912,9 +741,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"DES",
 		"AES",
@@ -928,9 +754,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 2,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"正确",
 		"错误"
@@ -942,9 +765,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XML",
 		"JSON",
@@ -958,9 +778,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"XML",
 		"JSON",
@@ -974,25 +791,6 @@
 	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
 	"answer" : 3,
 	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
-	"options" : [
-		"DES",
-		"AES",
-		"RSA",
-		"3DES"
-	],
-	"qu" : "以下哪个是非对称加密算法？",
-	"type" : "网络安全基础知识"
-},{
-	"__v" : 0,
-	"_id" : "ObjectId(5a5ecf926fa5c97ef40d9d1b)",
-	"answer" : 3,
-	"contributor" : "系统维护部",
-	"curTime" : "1516162961",
-	"endTime" : "1516162976",
-
 	"options" : [
 		"DES",
 		"AES",

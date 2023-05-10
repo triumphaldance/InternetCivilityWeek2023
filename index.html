@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <meta name="viewport" content="width=375,user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
 </head>
 <body>
-    <!--登录页面-->
-    <!--开始页面-->
-    <div class="page startGame active">
-        <button class="startBtn">开始答题</button>
-        <ul class="text">
-            <li>1. 题目数量为10道，每道题10分</li>
-            <li>2. 可以多次测试，每次题目均不同，第二次分数会覆盖第一次的分数</li>
-            <li>3. 分数绑定学号，以便于后期发放奖品，所以请一定正确填写您的学号</li>
-        </ul>
-    </div>
-    
-    <!--答题页面-->
-    <div class="page gaming">
-        <!--题目-->
-        <h1 class="timu"></h1>
-        <!--选项-->
-        <div class="options"></div>
-    </div>
-    
-    <!--结束页面-->
-    <div class="page endGame">
-        <h1>恭喜您获取：<span class="score">100</span>分</h1>
-        <button class="reStart">重新答题</button>
-        <br>
-        <p>开始答题时间：<span id="startDateTime"></span></p>
-        <p>结束答题时间：<span id="endDateTime"></span></p>
-        <p>答题时间：<span id="duration"></span></p>
-        <p style="color: #ffffff" class="poetry" id="poetry-content"></p>
-    </div>
-    
+    <div class="aui-flexView">
+        <section class="aui-scrollView">
+            <div style="margin-top: 30%" class="aui-code-box">
+                <!-- <form method="post"  action="${pageContext.request.contextPath }/user?method=User_log_ON"> -->
+                    <div class="logo-container">
+                        <img src="icon/snclogo.png" class="centered-img">
+                      </div>
+                    <form>
+                        
+                    <p class="aui-code-line">
+                        <input type="text" class="aui-code-line-input" name="username" value="" id="username" autocomplete="off" placeholder="请输入用户名" required>
+                    </p>
+                    <p class="aui-code-line aui-code-line-clear">
+                        <i class="aui-show  operate-eye-open"></i>
+                        <input type="number" class="aui-code-line-input password" placeholder="请输入学号" name="studentID" id="studentID" value="" >
+                    </p>
+                     <div class="aui-flex-links">
+                        <a href="javascript:;">
+                    </div> 
+                    <div class="aui-code-btn">
+                        <button type="button" onclick="login()">登录</button>
+                       
+                    </div>
+                </form>
+            </div>
 
-    
-
-    
-    <script src="js/jquery-1.11.0.js"></script>
-    <script src="js/js.js"></script>
+        </section>
+    </div>
 </body>
+<script>
+
+    function login(){
+    var username  = document.getElementById('username').value;
+    var studentID  = document.getElementById('studentID').value;
+        if(studentID.length !== 10 ||username.length>10||username.length==0){
+            // console.log('false');
+            alert('您的学号格式错误或者姓名超出10位');
+            document.getElementById("studentID").value="";
+        }else{
+            // console.log('true');
+            var redirectURL = "answer.html?username=" + encodeURIComponent(username) + "&studentID=" + encodeURIComponent(studentID);
+            window.location.href = redirectURL;
+           
+        }
+    }
+
+</script>
 </html>

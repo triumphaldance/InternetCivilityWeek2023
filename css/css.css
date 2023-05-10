@@ -4,15 +4,52 @@
 	/*设置不会因为内边距和 边框撑开宽度和高度*/
 	box-sizing: border-box;
 }
+.quizCount{
+	position: absolute;
+	top:40%;
+	color: #ddd;
+}
+.ranking{
+	position: absolute;
+	top:5%;
+}
 .text {
 	position: absolute;
 	bottom: 40px; /* 距离底部的距离 */
-	left: 30px; /* 距离左侧的距离 */
-	right: 30px;
 	color:#999999;
 	list-style: none;
 
   }
+   /* 表格样式  */
+  .styled-table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  .styled-table tbody{
+	color: #ddd;
+  }
+
+  
+  .styled-table thead th {
+	/* 表头样式 */
+	background-color: #f5f5f5;
+	border-bottom: 2px solid #ddd;
+	padding: 8px;
+	text-align: center; 
+  }
+  
+  .styled-table tbody td {
+	/* 表格数据样式 */
+	border-bottom: 1px solid #ddd;
+	padding: 8px;
+	text-align: center; 
+  }
+  
+  .styled-table tbody tr:last-child td {
+	/* 最后一行数据的底部边框样式 */
+	border-bottom: none;
+  }
+  
 .text li {
 	margin-bottom: 10px; /* 设置每个列表项之间的下边距 */
 }
@@ -29,14 +66,12 @@ html,body{
 	background: #333333;
 }
 .page{
-	width: 375px;
 	height: 100%;
 	/*三个页面都重叠到一起*/
 	position: absolute;
 	left: 0;
 	top: 0;
 	background: #333333;
-	transform: translateX(375px);
 	transition: all 1s;
 }
 
@@ -65,7 +100,7 @@ html,body{
 
 .gaming{
 	background: #333333;
-	padding: 40px 20px;
+	/* padding: 40px 20px; */
 }
 .gaming h1{
 	margin: 20px 0px;
