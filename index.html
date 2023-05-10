@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
 </head>
+
 <body>
     <div class="aui-flexView">
         <section class="aui-scrollView">
-            <div style="margin-top: 30%" class="aui-code-box">
+            <div class="aui-code-box">
                 <!-- <form method="post"  action="${pageContext.request.contextPath }/user?method=User_log_ON"> -->
-                    <div class="logo-container">
-                        <img src="icon/snclogo.png" class="centered-img">
-                      </div>
-                    <form>
-                        
+                <div class="logo-container">
+                    <img src="icon/snclogo.png" class="centered-img">
+                </div>
+                <form onsubmit="login()">
+
                     <p class="aui-code-line">
-                        <input type="text" class="aui-code-line-input" name="username" value="" id="username" autocomplete="off" placeholder="请输入用户名" required>
+                        <input type="text" class="aui-code-line-input" name="username" value="" id="username"
+                            autocomplete="off" placeholder="请输入用户名" required>
                     </p>
                     <p class="aui-code-line aui-code-line-clear">
                         <i class="aui-show  operate-eye-open"></i>
-                        <input type="number" class="aui-code-line-input password" placeholder="请输入学号" name="studentID" id="studentID" value="" >
+                        <input type="number" class="aui-code-line-input password" placeholder="请输入学号" name="studentID"
+                            id="studentID" value="">
                     </p>
-                     <div class="aui-flex-links">
+                    <div class="aui-flex-links">
                         <a href="javascript:;">
-                    </div> 
+                    </div>
                     <div class="aui-code-btn">
-                        <button type="button" onclick="login()">登录</button>
-                       
+                        <button id="loginbtn" type="button" onclick="login()">登录</button>
+
                     </div>
                 </form>
             </div>
@@ -39,20 +43,29 @@
 </body>
 <script>
 
-    function login(){
-    var username  = document.getElementById('username').value;
-    var studentID  = document.getElementById('studentID').value;
-        if(studentID.length !== 10 ||username.length>10||username.length==0){
+    function login() {
+        var username = document.getElementById('username').value;
+        var studentID = document.getElementById('studentID').value;
+        if (studentID.length !== 10 || username.length > 10 || username.length == 0) {
             // console.log('false');
             alert('您的学号格式错误或者姓名超出10位');
-            document.getElementById("studentID").value="";
-        }else{
+            document.getElementById("studentID").value = "";
+        } else {
             // console.log('true');
             var redirectURL = "answer.html?username=" + encodeURIComponent(username) + "&studentID=" + encodeURIComponent(studentID);
             window.location.href = redirectURL;
-           
+
         }
     }
+    var form = document.querySelector('form');
+
+    form.addEventListener('keydown', function (event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            login();
+        }
+    });
 
 </script>
+
 </html>
